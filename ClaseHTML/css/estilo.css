@@ -1,0 +1,23 @@
+body{
+    background-color: rgb(147, 124, 60); rgb(150, 127, 127);
+
+}
+img{
+    width: 100px; 
+    border:solid;
+    border-radius:50%;
+}
+p{color:rgb(2, 2, 2);
+}
+
+#unico{
+    color:rgb(34, 196, 177);
+}
+
+#pepito{
+   background-color:rgb(182, 35, 140);
+}
+
+#num{
+    background-color: rgb(29, 89, 89);
+}

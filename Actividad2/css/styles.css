@@ -1,0 +1,263 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#contenedor {
+    width: 100vw;
+    height: 100vh;
+    background-color: #ffff;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: 60px 600px repeat(4, 300px) repeat(3, 600px) 650px 60px;
+    grid-template-areas:
+        "cabecera"
+        "a"
+        "uno"
+        "dos"
+        "tres"
+        "cuatro"
+        "B"
+        "C"
+        "D"
+        "E"
+        "F"
+    ;
+}
+
+#cabecera2 {
+    display: none;
+}
+
+.buton {
+    display: none;
+}
+
+#hero{
+    display: none;
+}
+
+#cabecera {
+    grid-area: cabecera;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+
+}
+
+button {
+    background-color: black;
+    width: 200px;
+    height: 40px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+i {
+    margin-left: auto;
+    margin-top: 10px;
+    margin-right: 10px;
+    font-size: 30px;
+
+}
+
+#a {
+    grid-area: a;
+    background-color: rgb(71, 71, 214);
+
+}
+
+#uno {
+    grid-area: uno;
+    background-color: rgb(71, 214, 71);
+}
+
+#dos {
+    grid-area: dos;
+    background-color: rgb(214, 71, 71);
+}
+
+#tres {
+    grid-area: tres;
+    background-color: rgb(214, 214, 71);
+}
+
+#cuatro {
+    grid-area: cuatro;
+    background-color: rgb(71, 214, 214);
+}
+
+.con {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.pnumero {
+    font-size: 60px;
+}
+
+#B {
+    grid-area: B;
+    background-color: rgb(214, 71, 214);
+
+}
+
+#C {
+    grid-area: C;
+    background-color: rgb(71, 71, 71);
+}
+
+#D {
+    grid-area: D;
+    background-color: rgb(214, 214, 214);
+}
+
+.letra {
+    display: flex;
+    flex-direction: column;
+}
+
+.pletra {
+    font-size: 60px;
+    margin-right: auto;
+    margin-top: 20px;
+}
+
+img {
+    width: 100%;
+    margin-top: auto;
+
+}
+
+#E {
+    grid-area: E;
+    background-color: rgb(71, 214, 71);
+}
+
+#F {
+    grid-area: F;
+    background-color: rgb(214, 71, 71);
+}
+
+@media (min-width: 480px) and (max-width: 768px) {
+    #contenedor {
+
+        background-color: #ffff;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 70px 700px repeat(2, 350px) repeat(3, 500px) 400px 30px;
+        grid-template-areas:
+            "cabecera cabecera"
+            "a a"
+            "uno dos"
+            "tres cuatro"
+            "B B"
+            "C C"
+            "D D"
+            "E E"
+            "F F"
+
+
+        ;
+    }
+
+    #hero{
+        display: none;
+    }
+
+
+    #cabecera2 {
+        display: none;
+    }
+
+
+    .letra {
+        display: flex;
+        flex-direction: column;
+    }
+
+    img {
+        width: 50%;
+        margin-left: auto;
+        margin-bottom: 10px;
+    }
+}
+
+
+@media (min-width: 768px) {
+    #contenedor {
+
+        background-color: #ffff;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: 40px 100px 700px 300px repeat(3, 500px) 200px 30px;
+        grid-template-areas:
+            "cabecera2 cabecera2 cabecera2 cabecera2"
+            "cabecera cabecera cabecera cabecera"
+            "a a a a"
+            "uno dos tres cuatro"
+            "B B B B"
+            "C C C C"
+            "D D D D"
+            "E E E E"
+            "F F F F"
+        ;
+    }
+
+    #cabecera2 {
+        grid-area: cabecera2;
+        background-color: rgb(7, 226, 121);
+        display: block;
+    }
+
+    img {
+        width: 50%;
+        height: 60%;
+        margin-left: auto;
+        margin-bottom: 50px;
+        
+    }
+
+    #hero{
+        display: block;
+    }
+
+    .buton {
+        display: block;
+        margin-top: 10px;
+        margin-left: 10px;
+    }
+
+    #cabecera i {
+        display: none;
+    }
+
+    .buton {
+        margin-left: auto;
+
+    }
+
+    #hero {
+        font-size: 60px;
+    }
+
+    #a{
+        display: inline-block;
+      
+    }
+
+
+
+
+
+
+
+
+
+
+}

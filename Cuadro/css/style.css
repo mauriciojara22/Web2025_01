@@ -1,0 +1,42 @@
+*{
+  padding: 50px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+#container{
+  width: 50vw;
+  height: 50vh;
+  display:grid;
+  grid-template-columns: repeat(5,1fr);
+  grid-template-rows: repeat(3,1fr);
+  grid-template-areas:
+  "uno uno uno uno uno"
+  " dos dos tres tres cuatro"
+  "cinco cinco cinco cinco cuatro"
+}
+
+#uno{
+grid-area: uno;
+background-color: green;
+}
+
+#dos{
+  grid-area: dos;
+  background-color: rgb(19, 32, 207);
+}
+
+#tres{
+  grid-area: tres;
+  background-color: purple;
+}
+
+#cuatro{
+  grid-area: cuatro;
+  background-color: orange;
+}
+
+#cinco{
+  grid-area: cinco;
+  background-color: yellow;
+}
